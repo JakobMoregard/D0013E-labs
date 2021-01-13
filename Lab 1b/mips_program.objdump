@@ -1,0 +1,204 @@
+
+a.out:     file format elf32-tradbigmips
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000158  00000000  00000000  00000060  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         000001a0  00001000  00001000  00001060  2**4
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  000011a0  000011a0  00001200  2**0
+                  ALLOC
+  3 .reginfo      00000018  00000000  00000000  00001200  2**2
+                  CONTENTS, READONLY, LINK_ONCE_SAME_SIZE
+  4 .pdr          00000000  00000000  00000000  00001218  2**2
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+00001000 l    d  .data	00000000 .data
+000011a0 l    d  .bss	00000000 .bss
+00000000 l    d  .reginfo	00000000 .reginfo
+00000000 l    d  .pdr	00000000 .pdr
+00000000 l    d  *ABS*	00000000 .shstrtab
+00000000 l    d  *ABS*	00000000 .symtab
+00000000 l    d  *ABS*	00000000 .strtab
+00001000 l       .data	00000000 plain
+00001050 l       .data	00000000 seed
+00001054 l       .data	00000000 abc
+00001064 l       .data	00000000 coded
+00000000 l       .text	00000000 main
+00000088 l       .text	00000000 decode
+00000028 l       .text	00000000 end
+0000002c l       .text	00000000 codgen
+0000004c l       .text	00000000 loop
+00000060 l       .text	00000000 save
+00000070 l       .text	00000000 exit
+000000b8 l       .text	00000000 if
+000000d0 l       .text	00000000 else
+000000c0 l       .text	00000000 then
+0000013c l       .text	00000000 exit2
+00000000 g       *ABS*	00000000 __start
+
+
+Contents of section .text:
+ 0000 3c105ef3 3610afd3 3c110000 26311050  <.^.6...<...&1.P
+ 0010 ae300000 3c040000 24841064 3c050000  .0..<...$..d<...
+ 0020 24a51000 04110018 1000ffff 27bdfffc  $...........'...
+ 0030 afbf0000 27bdfffc afbe0000 03a0f021  ....'..........!
+ 0040 8e280000 00084880 00094ec2 00085080  .(....H...N...P.
+ 0050 00085882 014b4023 2529ffff 0521fffb  ..X..K@#%)...!..
+ 0060 3c0c7bd9 358cf87d 010c1026 ae280000  <.{.5..}...&.(..
+ 0070 03c0e821 8fbe0000 27bd0004 8fbf0000  ...!....'.......
+ 0080 27bd0004 03e00008 27bdfffc afbf0000  '.......'.......
+ 0090 27bdfffc afbe0000 03a0f021 27bdffe8  '..........!'...
+ 00a0 afc4fffc afc5fff8 0411ffe0 00404025  .............@@%
+ 00b0 01004027 afc8fff4 8c890000 15200004  ..@'......... ..
+ 00c0 a0a00000 afc8fff0 250d0000 1000001b  ........%.......
+ 00d0 24840004 24a50001 0411ffeb 00405025  $...$........@P%
+ 00e0 afcaffec 8fc8fff4 8fc9fffc 8d290000  .............)..
+ 00f0 010a6026 01896023 afccffe8 000c6cc2  ..`&..`#......l.
+ 0100 8fcefff8 a1cd0000 0411ffc8 00406825  .............@h%
+ 0110 01a06827 25ad0001 afcdfff0 8fc8fff4  ..h'%...........
+ 0120 8fcaffec 8fccffe8 25ad0005 01ac6821  ........%.....h!
+ 0130 01aa6821 01a86821 afcdfff0 25a20000  ..h!..h!....%...
+ 0140 03c0e821 8fbe0000 27bd0004 8fbf0000  ...!....'.......
+ 0150 27bd0004 03e00008                    '.......        
+Contents of section .data:
+ 1000 00000000 00000000 00000000 00000000  ................
+ 1010 00000000 00000000 00000000 00000000  ................
+ 1020 00000000 00000000 00000000 00000000  ................
+ 1030 00000000 00000000 00000000 00000000  ................
+ 1040 00000000 00000000 00000000 00000000  ................
+ 1050 00000000 04abc806 0d8c58cf c8abf379  ..........X....y
+ 1060 00000000 bff0eb3f 2367484d 76ad79bc  .......?#gHMv.y.
+ 1070 62cd3fdb d7c3959b 237232fe 170db5f1  b.?.....#r2.....
+ 1080 66aeaf1b cfef7613 605f4e1b f32c16a7  f.....v.`_N..,..
+ 1090 ae0fdc87 a555ebd6 9dacf320 a6fd4c24  .....U..... ..L$
+ 10a0 faf0db8e 052c1055 2016fc1a f458f1e3  .....,.U ....X..
+ 10b0 76274c7a f8db5eaa 08735413 46f9a26d  v'Lz..^..sT.F..m
+ 10c0 4d4bc9d3 55ce9d32 9d52a6b4 274490ed  MK..U..2.R..'D..
+ 10d0 d393f58f 66d50879 673a3a95 7c36b5d6  ....f..yg::.|6..
+ 10e0 89b9c1d2 52668354 8e965cfc 6466ec1b  ....Rf.T..\.df..
+ 10f0 ed8928c5 639ea4c5 cb596e67 b8286b71  ..(.c....Yng.(kq
+ 1100 08951897 7a90b9bb 92becb53 7ecee629  ....z......S~..)
+ 1110 4878995b 7fb21436 5dcfa3de 7ee21bd7  Hx.[...6]...~...
+ 1120 3b51148e ebca9417 6904e842 3b1b5bdb  ;Q......i..B;.[.
+ 1130 ab1bbe08 24fb2862 11645ea5 9aa9cdcc  ....$.(b.d^.....
+ 1140 4118c7eb ecdd6187 13642c8c 2db4d064  A.....a..d,.-..d
+ 1150 e1157c37 51d4c29f f75cdbc0 17b954a3  ..|7Q....\....T.
+ 1160 2694e581 f8ecec6c 92a61c75 8d3d27b7  &......l...u.='.
+ 1170 79f766be 69a0676f 94b14d99 7c2eece9  y.f.i.go..M.|...
+ 1180 d43eb476 cf58cc1e 5d962324 f5ab4049  .>.v.X..].#$..@I
+ 1190 e813fe90 00000000 00000000 00000000  ................
+Contents of section .reginfo:
+ 0000 e0037f34 00000000 00000000 00000000  ...4............
+ 0010 00000000 00000000                    ........        
+Disassembly of section .text:
+
+00000000 <main>:
+   0:	3c105ef3 	lui	s0,0x5ef3
+   4:	3610afd3 	ori	s0,s0,0xafd3
+   8:	3c110000 	lui	s1,0x0
+   c:	26311050 	addiu	s1,s1,4176
+  10:	ae300000 	sw	s0,0(s1)
+  14:	3c040000 	lui	a0,0x0
+  18:	24841064 	addiu	a0,a0,4196
+  1c:	3c050000 	lui	a1,0x0
+  20:	24a51000 	addiu	a1,a1,4096
+  24:	04110018 	bal	88 <decode>
+
+00000028 <end>:
+  28:	1000ffff 	b	28 <end>
+
+0000002c <codgen>:
+  2c:	27bdfffc 	addiu	sp,sp,-4
+  30:	afbf0000 	sw	ra,0(sp)
+  34:	27bdfffc 	addiu	sp,sp,-4
+  38:	afbe0000 	sw	s8,0(sp)
+  3c:	03a0f021 	move	s8,sp
+  40:	8e280000 	lw	t0,0(s1)
+  44:	00084880 	sll	t1,t0,0x2
+  48:	00094ec2 	srl	t1,t1,0x1b
+
+0000004c <loop>:
+  4c:	00085080 	sll	t2,t0,0x2
+  50:	00085882 	srl	t3,t0,0x2
+  54:	014b4023 	subu	t0,t2,t3
+  58:	2529ffff 	addiu	t1,t1,-1
+  5c:	0521fffb 	bgez	t1,4c <loop>
+
+00000060 <save>:
+  60:	3c0c7bd9 	lui	t4,0x7bd9
+  64:	358cf87d 	ori	t4,t4,0xf87d
+  68:	010c1026 	xor	v0,t0,t4
+  6c:	ae280000 	sw	t0,0(s1)
+
+00000070 <exit>:
+  70:	03c0e821 	move	sp,s8
+  74:	8fbe0000 	lw	s8,0(sp)
+  78:	27bd0004 	addiu	sp,sp,4
+  7c:	8fbf0000 	lw	ra,0(sp)
+  80:	27bd0004 	addiu	sp,sp,4
+  84:	03e00008 	jr	ra
+
+00000088 <decode>:
+  88:	27bdfffc 	addiu	sp,sp,-4
+  8c:	afbf0000 	sw	ra,0(sp)
+  90:	27bdfffc 	addiu	sp,sp,-4
+  94:	afbe0000 	sw	s8,0(sp)
+  98:	03a0f021 	move	s8,sp
+  9c:	27bdffe8 	addiu	sp,sp,-24
+  a0:	afc4fffc 	sw	a0,-4(s8)
+  a4:	afc5fff8 	sw	a1,-8(s8)
+  a8:	0411ffe0 	bal	2c <codgen>
+  ac:	00404025 	move	t0,v0
+  b0:	01004027 	nor	t0,t0,zero
+  b4:	afc8fff4 	sw	t0,-12(s8)
+
+000000b8 <if>:
+  b8:	8c890000 	lw	t1,0(a0)
+  bc:	15200004 	bnez	t1,d0 <else>
+
+000000c0 <then>:
+  c0:	a0a00000 	sb	zero,0(a1)
+  c4:	afc8fff0 	sw	t0,-16(s8)
+  c8:	250d0000 	addiu	t5,t0,0
+  cc:	1000001b 	b	13c <exit2>
+
+000000d0 <else>:
+  d0:	24840004 	addiu	a0,a0,4
+  d4:	24a50001 	addiu	a1,a1,1
+  d8:	0411ffeb 	bal	88 <decode>
+  dc:	00405025 	move	t2,v0
+  e0:	afcaffec 	sw	t2,-20(s8)
+  e4:	8fc8fff4 	lw	t0,-12(s8)
+  e8:	8fc9fffc 	lw	t1,-4(s8)
+  ec:	8d290000 	lw	t1,0(t1)
+  f0:	010a6026 	xor	t4,t0,t2
+  f4:	01896023 	subu	t4,t4,t1
+  f8:	afccffe8 	sw	t4,-24(s8)
+  fc:	000c6cc2 	srl	t5,t4,0x13
+ 100:	8fcefff8 	lw	t6,-8(s8)
+ 104:	a1cd0000 	sb	t5,0(t6)
+ 108:	0411ffc8 	bal	2c <codgen>
+ 10c:	00406825 	move	t5,v0
+ 110:	01a06827 	nor	t5,t5,zero
+ 114:	25ad0001 	addiu	t5,t5,1
+ 118:	afcdfff0 	sw	t5,-16(s8)
+ 11c:	8fc8fff4 	lw	t0,-12(s8)
+ 120:	8fcaffec 	lw	t2,-20(s8)
+ 124:	8fccffe8 	lw	t4,-24(s8)
+ 128:	25ad0005 	addiu	t5,t5,5
+ 12c:	01ac6821 	addu	t5,t5,t4
+ 130:	01aa6821 	addu	t5,t5,t2
+ 134:	01a86821 	addu	t5,t5,t0
+ 138:	afcdfff0 	sw	t5,-16(s8)
+
+0000013c <exit2>:
+ 13c:	25a20000 	addiu	v0,t5,0
+ 140:	03c0e821 	move	sp,s8
+ 144:	8fbe0000 	lw	s8,0(sp)
+ 148:	27bd0004 	addiu	sp,sp,4
+ 14c:	8fbf0000 	lw	ra,0(sp)
+ 150:	27bd0004 	addiu	sp,sp,4
+ 154:	03e00008 	jr	ra
